@@ -68,3 +68,38 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Important Notes:
+
+Create React App Generation
+
+In the next lecture, we will be going over how to install Create React App globally and generate the application. This method of generating a React project is no longer recommended.
+
+Instead of this:
+
+    ...
+    
+    npm install -g create-react-app
+    create-react-app frontend
+    
+    ...
+
+We need to run this command:
+
+    ...
+    
+    npx create-react-app frontend
+    
+    ...
+    
+**Documentation:**
+
+https://create-react-app.dev/docs/getting-started#npx
+
+If you've previously installed create-react-app globally via npm install -g create-react-app, we recommend you uninstall the package using npm uninstall -g create-react-app to ensure that npx always uses the latest version.
+
+### Commands:
+
+- `npm run test`  **Run Bundled Tests**
+- `npm run build` **Create a Production Grade Build**
+- `npm run start` **Start a Development Server**
