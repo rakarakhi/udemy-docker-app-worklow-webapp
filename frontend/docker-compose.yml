@@ -1,0 +1,13 @@
+# Production Docker Compose YML.
+# Command: docker-compose up --build .
+# Container Name will be "web"
+
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - /usr/app/node_modules
+      - ./:/usr/app

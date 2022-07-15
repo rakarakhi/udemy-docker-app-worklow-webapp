@@ -1,0 +1,14 @@
+# Development Version of Docker Compose YML File
+# Command: docker-compose up --build -f docker-compose.dev.yml .
+# Container Name will be "web"
+
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - /usr/app/node_modules
+      - ./:/usr/app
+    
