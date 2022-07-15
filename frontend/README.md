@@ -103,3 +103,7 @@ If you've previously installed create-react-app globally via npm install -g crea
 - `npm run test`  **Run Bundled Tests**
 - `npm run build` **Create a Production Grade Build**
 - `npm run start` **Start a Development Server**
+
+### .gitignore file settings:
+
+**The file is setup in such a manner build, node_modules, test coverage folders will never be checked into GitHub Repository**
